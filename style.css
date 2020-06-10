@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+	font-family: 'aAlloyInk';
+	src: url(fonts/aAlloyInk.ttf);
+}
+
+
+
+body{
+   font-family: 'aAlloyInk  ', sans-serif !important;
+    background-image: url('img/bgK.jpg');
+    background-size: cover ;
+    background-position: top right;
+    background-repeat: no-repeat;
+    
+}
+.page{
+    position: relative;
+    left: 30%;
+    margin-top: 5%;
+}
+
+.container{
+    width: 300px;    
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom : 50px;
+
+}
+#text{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px !important;
+    border: none !important;
+    outline: none !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 16px 0px 16px 0px !important;
+    border-bottom: 3px solid #DF8E00 !important;
+    
+    color: #313131 !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    transition: 0.2s ease-out !important;
+}
+#text:focus{
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+#btn{
+    border: none !important;
+    outline: none !important;
+    background-color: rgba(20, 4, 5, 0.3) !important;
+    border-radius: 16px 0px 16px 0px !important;
+    margin-left: 5px;
+    position: relative;
+    left: 25%;
+    bottom: 45px;
+
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+
+    display: none;
+    position: relative;
+    right: 35%;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: -10px;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+    position: relative;
+    top: -10px;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    top: -10px;
+}
+
+.location{
+    
+}
+
+.location p{
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 6px  bisque;
+  position: relative;
+  left: 5%;
+  top: -10px;
+}
+
+
+/*------------------------------MOBILE  DEVICE SETTING-------------------  */
+
+@media (max-width:500px){
+
+    body{
+   font-family: 'montserrat', sans-serif !important;
+    background-image: url("img/bga.gif") !important;
+    background-size: cover ;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.app-title p{
+    
+    color: #ffffff !important;
+}
+.notification p{
+    color: #C2CDDF !important;
+    
+}
+.temperature-value p{
+    color: #DF4E00;
+    
+}
+.temperature-description p{
+    color:#DF4E00 !important;
+}
+.location p{
+    color:#DF4E00 !important;
+}
+
+.temperature-value span{
+    color:#DF4E00 !important;
+}
+#text{
+    border-bottom: 3px solid #DF4E00 !important;
+}
+}
